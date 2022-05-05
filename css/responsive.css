@@ -1,0 +1,130 @@
+@media screen and (max-width: 992px) 
+{
+	h1
+	{
+		font-weight: bold;
+		font-size:42px;
+		font-family: Genncy-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+	}
+	h2
+	{
+		font-size: 35px;
+		font-weight: bold;
+	}
+	h6
+	{
+		letter-spacing: 1px;
+		font-size:16px;
+		line-height:25px;
+	}
+	/*.. Home Page ..*/
+	.navbar ul li
+	{
+		margin-top:10px;
+	}
+	.navbar-toggler
+	{	
+		font-size: 25px;
+		color:#611f69;
+		outline: none;
+	}
+	#owl-demo.owl-theme .owl-nav .owl-next , #owl-demo.owl-theme .owl-nav .owl-prev
+	{
+		display: none;
+	}
+	.foot-part1
+	{
+		margin-top:-73px;
+		text-align: center;
+	}
+	.foot-part1 p
+	{
+		margin-top:20px;
+	}
+  	.foot-part2 .social-icon 
+  	{
+  		text-align: center;
+  		margin-top:20px;
+  		margin-left:0px;
+  		padding:0px;
+  	}
+  	.foot-part2 .liststyle1
+  	{
+  		text-align: center;
+   	}
+  	.foot-part3 p
+  	{
+  		text-align: center;
+  	}
+  	.slider-carousel .logo-sliders .img-fluid
+  	{
+  		margin-bottom:20px;
+  	}
+  	/*.. About Page ..*/
+  	
+  	.h1before:before
+	{
+		display: none;
+	}
+	.about-sliderpart p:after
+	{
+		display: none;
+	}
+	.about-sliderpart p br
+	{
+		display: none;
+	}
+{
+	font-size: 18px;
+}
+	.about-aboutpart h3
+	{
+		margin-top:20px;
+	}
+	.margin-responsive
+	{
+		margin-top:20px;
+		margin-bottom: 20px;
+	}
+	.about-news-part
+	{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.about-counting-part
+	{
+		text-align: center;
+	}
+	.about-counting-part h1
+	{
+		margin-top: 20px;
+	}
+	.logo-list img
+	{
+		padding: 20px 17px 20px 10px;
+	}
+	.logo-list
+	{
+		text-align: center;
+	}
+	/*.. Engineering Page ..*/
+	.develop-part1
+	{
+		background-image: none;
+	}
+	.h2border
+	{
+		border:none;
+	}
+	.comp-logo
+	{
+		text-align: center;
+	}
+	.quotes-part img
+	{
+		position: absolute;
+		top:50%;
+	}
+
+
+}	
