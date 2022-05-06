@@ -21,6 +21,16 @@ body {
     // .container, .container-lg, .container-md, .container-sm, .container-xl {
     //     max-width: 1401px;
     // }
+    section#banner{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
     section#expected-benefit {
         .container{
             @media screen and (min-width: 1200px) {

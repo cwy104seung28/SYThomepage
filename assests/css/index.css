@@ -16,6 +16,10 @@ body nav .container .navbar-collapse {
           flex-grow: 0;
 }
 
+body section#banner .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   body section#expected-benefit .container {
     max-width: 1400px;
