@@ -1,5 +1,5 @@
 body {
-
+position: relative;
     h1,
     h2,
     h3 {
@@ -12,32 +12,43 @@ body {
             max-width: 100%;
         }
     }
-    nav {
-        .container {
-            justify-content: space-between;
-
-            .navbar-collapse {
-                flex-grow: 0;
-                .nav-item{
+    
+    .nav-container{
+        width: 100%;
+        position: fixed;
+        background-color: #fff;
+        z-index: 1;
+        nav {
+            .container {
+                justify-content: space-between;
+                .logoimg{
                     transition: 0.5s ease-in-out;
-                    &:hover{
-                        transform: translateY(-5px);
-                    }
-                    a {
-                        text-decoration: none;
+                        &:hover{
+                            transform: translateY(-5px);
+                        }
+                }
+                .navbar-collapse {
+                    flex-grow: 0;
+                    .nav-item{
                         transition: 0.5s ease-in-out;
                         &:hover{
-                            color: #999999 !important;
+                            transform: translateY(-5px);
+                        }
+                        a {
+                            font-size: 18px;
+                            text-decoration: none;
+                            transition: 0.5s ease-in-out;
+                            &:hover{
+                                color: #999999 !important;
+                            }
                         }
                     }
+    
                 }
-
             }
-
-            
-
         }
     }
+
     @media screen and (max-width: 992px) {
         .navbar {
             ul {
@@ -51,6 +62,26 @@ body {
     // .container, .container-lg, .container-md, .container-sm, .container-xl {
     //     max-width: 1401px;
     // }
+
+    .top-btn{
+        position: fixed;
+        z-index: 2;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #2895da;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        font-size: 26px;
+        padding: 10px;
+        color:#fff;
+        text-decoration: none;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
     section#banner {
         .carousel-inner {
             .carousel-item {
@@ -62,6 +93,12 @@ body {
     }
 
     section#service {
+        .container{
+        
+            @media (min-width: 576px) {
+                max-width: 90%;
+            }
+        }
         h3 {
             font-weight: 600;
         }
@@ -72,6 +109,7 @@ body {
                 margin-bottom: 20px;
             }
         }
+        
     }
 
     // section#expected-benefit {
@@ -126,6 +164,10 @@ body {
     section#about {
         img {
             height: auto;
+            padding: 0px;
+        }
+        p{
+            font-size: 20px;
         }
     }
 

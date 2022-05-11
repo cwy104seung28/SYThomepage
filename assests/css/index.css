@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 body h1,
 body h2,
 body h3 {
@@ -10,35 +14,53 @@ body h3 {
   }
 }
 
-body nav .container {
+body .nav-container {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+}
+
+body .nav-container nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-body nav .container .navbar-collapse {
+body .nav-container nav .container .logoimg {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body .nav-container nav .container .logoimg:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body .nav-container nav .container .navbar-collapse {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
 
-body nav .container .navbar-collapse .nav-item {
+body .nav-container nav .container .navbar-collapse .nav-item {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-body nav .container .navbar-collapse .nav-item:hover {
+body .nav-container nav .container .navbar-collapse .nav-item:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-body nav .container .navbar-collapse .nav-item a {
+body .nav-container nav .container .navbar-collapse .nav-item a {
+  font-size: 18px;
   text-decoration: none;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-body nav .container .navbar-collapse .nav-item a:hover {
+body .nav-container nav .container .navbar-collapse .nav-item a:hover {
   color: #999999 !important;
 }
 
@@ -48,8 +70,37 @@ body nav .container .navbar-collapse .nav-item a:hover {
   }
 }
 
+body .top-btn {
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #2895da;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 26px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+body .top-btn:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 body section#banner .carousel-inner .carousel-item img {
   width: 100%;
+}
+
+@media (min-width: 576px) {
+  body section#service .container {
+    max-width: 90%;
+  }
 }
 
 body section#service h3 {
@@ -68,6 +119,11 @@ body section#service .hoverzoom {
 
 body section#about img {
   height: auto;
+  padding: 0px;
+}
+
+body section#about p {
+  font-size: 20px;
 }
 
 body section#contact {
