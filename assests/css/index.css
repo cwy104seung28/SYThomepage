@@ -16,6 +16,16 @@ body nav .container .navbar-collapse {
           flex-grow: 0;
 }
 
+body nav .container .navbar-collapse a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  body .navbar ul li {
+    text-align: center;
+  }
+}
+
 body section#banner .carousel-inner .carousel-item img {
   width: 100%;
 }
