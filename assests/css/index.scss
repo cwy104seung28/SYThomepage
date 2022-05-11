@@ -18,6 +18,7 @@ position: relative;
         position: fixed;
         background-color: #fff;
         z-index: 1;
+        top: 0;
         nav {
             .container {
                 justify-content: space-between;
@@ -83,6 +84,13 @@ position: relative;
         }
     }
     section#banner {
+        margin-top: 20px;
+        @media (max-width: 991px) {
+            margin-top: 30px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
         .carousel-inner {
             .carousel-item {
                 img {
@@ -94,21 +102,32 @@ position: relative;
 
     section#service {
         .container{
-        
             @media (min-width: 576px) {
                 max-width: 90%;
             }
-        }
-        h3 {
-            font-weight: 600;
-        }
-        .hoverzoom{
-            // height: 440px;
-            padding: 20px;
-            @media screen and (max-width: 991px){
-                margin-bottom: 20px;
+            h3 {
+                font-weight: 600;
+            }
+            .hoverzoom{
+                // height: 440px;
+                padding: 20px;
+                @media screen and (max-width: 991px){
+                    margin-bottom: 20px;
+                }
+            }
+            #card-1{
+                animation-delay: 0.5s;
+                animation: dropDown 0.75s ease-in-out;
+            }
+            #card-2{
+                animation-delay: 0.25s;
+                animation: dropDown 0.5s ease-in-out;
+            }
+            #card-3{
+                animation: dropDown 0.25s ease-in-out;
             }
         }
+
         
     }
 
@@ -468,6 +487,16 @@ position: relative;
                 padding-left: 0px;
 
             }
+        }
+    }
+    @keyframes dropDown {
+        0%{
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
         }
     }
 }

@@ -19,6 +19,7 @@ body .nav-container {
   position: fixed;
   background-color: #fff;
   z-index: 1;
+  top: 0;
 }
 
 body .nav-container nav .container {
@@ -93,6 +94,22 @@ body .top-btn:hover {
           transform: translateY(-10px);
 }
 
+body section#banner {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  body section#banner {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  body section#banner {
+    margin-top: 40px;
+  }
+}
+
 body section#banner .carousel-inner .carousel-item img {
   width: 100%;
 }
@@ -103,18 +120,37 @@ body section#banner .carousel-inner .carousel-item img {
   }
 }
 
-body section#service h3 {
+body section#service .container h3 {
   font-weight: 600;
 }
 
-body section#service .hoverzoom {
+body section#service .container .hoverzoom {
   padding: 20px;
 }
 
 @media screen and (max-width: 991px) {
-  body section#service .hoverzoom {
+  body section#service .container .hoverzoom {
     margin-bottom: 20px;
   }
+}
+
+body section#service .container #card-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: dropDown 0.75s ease-in-out;
+          animation: dropDown 0.75s ease-in-out;
+}
+
+body section#service .container #card-2 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation: dropDown 0.5s ease-in-out;
+          animation: dropDown 0.5s ease-in-out;
+}
+
+body section#service .container #card-3 {
+  -webkit-animation: dropDown 0.25s ease-in-out;
+          animation: dropDown 0.25s ease-in-out;
 }
 
 body section#about img {
@@ -401,6 +437,32 @@ body footer .footerInfo a {
   body footer .footerInfo {
     border: none;
     padding-left: 0px;
+  }
+}
+
+@-webkit-keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=index.css.map */
