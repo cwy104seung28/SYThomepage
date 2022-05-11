@@ -4,6 +4,12 @@ body h3 {
   color: #006CAE;
 }
 
+@media (min-width: 576px) {
+  body .container {
+    max-width: 100%;
+  }
+}
+
 body nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -16,8 +22,24 @@ body nav .container .navbar-collapse {
           flex-grow: 0;
 }
 
-body nav .container .navbar-collapse a {
+body nav .container .navbar-collapse .nav-item {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body nav .container .navbar-collapse .nav-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body nav .container .navbar-collapse .nav-item a {
   text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body nav .container .navbar-collapse .nav-item a:hover {
+  color: #999999 !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -298,6 +320,11 @@ body footer .footerInfo {
 body footer .footerInfo p {
   font-size: 12px;
   margin: 8px;
+}
+
+body footer .footerInfo a {
+  color: #999999;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
