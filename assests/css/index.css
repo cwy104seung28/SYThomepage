@@ -20,50 +20,8 @@ body section#banner .carousel-inner .carousel-item img {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  body section#expected-benefit .container {
-    max-width: 1400px;
-  }
-}
-
-body section#expected-benefit .container .row div {
-  margin-bottom: 40px;
-}
-
-body section#system .card {
-  height: 500px;
-}
-
-@media screen and (max-width: 767px) {
-  body section#system .card {
-    height: 450px;
-  }
-}
-
-body section#system .card div {
-  height: 450px;
-  padding: 20px 10px;
-}
-
-body section#system .card div img {
-  width: 200px;
-  border-radius: 50%;
-  border: solid 3px #025B83;
-  background-color: #025B83;
-  margin-left: calc(50% - 100px);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-body section#system .card div img:hover {
-  background-color: #238bba;
-  border: solid 3px #238bba;
-}
-
-@media screen and (max-width: 767px) {
-  body section#system .card div {
-    height: 400px;
-  }
+body section#service h3 {
+  font-weight: 600;
 }
 
 body section#about img {
@@ -311,18 +269,15 @@ body footer .footerCompany p {
 }
 
 body footer .footerInfo {
-  border-left: solid 1px #fff;
+  border-left: solid 1px #999999;
   padding-left: 20px;
   padding-top: 10px;
+  text-align: left;
 }
 
 body footer .footerInfo p {
   font-size: 12px;
   margin: 8px;
-}
-
-body footer .footerInfo p i {
-  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -338,7 +293,7 @@ body footer .footerInfo p i {
     margin-bottom: 10px;
     padding-left: 3px;
     padding-bottom: 10px;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #999999;
   }
   body footer .footerInfo {
     border: none;
