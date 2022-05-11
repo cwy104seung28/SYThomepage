@@ -50,6 +50,13 @@ body {
         h3 {
             font-weight: 600;
         }
+        .hoverzoom{
+            // height: 440px;
+            padding: 20px;
+            @media screen and (max-width: 991px){
+                margin-bottom: 20px;
+            }
+        }
     }
 
     // section#expected-benefit {

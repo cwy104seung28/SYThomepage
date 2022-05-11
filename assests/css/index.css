@@ -34,6 +34,16 @@ body section#service h3 {
   font-weight: 600;
 }
 
+body section#service .hoverzoom {
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  body section#service .hoverzoom {
+    margin-bottom: 20px;
+  }
+}
+
 body section#about img {
   height: auto;
 }
