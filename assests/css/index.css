@@ -126,7 +126,7 @@ body section#banner .carousel-inner .carousel-item img {
 }
 
 body section#service {
-  height: 100vh;
+  height: 1080px;
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -207,6 +207,7 @@ body section#service .container .hoverzoom {
 body section#about {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -220,6 +221,14 @@ body section#about #about-content {
           transform: translateX(-1000px);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  z-index: 0;
+}
+
+@media screen and (max-width: 991px) {
+  body section#about #about-content {
+    -webkit-transform: translateX(0px) translateY(-1000px);
+            transform: translateX(0px) translateY(-1000px);
+  }
 }
 
 body section#about #about-img {
@@ -228,6 +237,13 @@ body section#about #about-img {
           transform: translateX(1000px);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  body section#about #about-img {
+    -webkit-transform: translateX(0px) translateY(1000px);
+            transform: translateX(0px) translateY(1000px);
+  }
 }
 
 body section#about img {
