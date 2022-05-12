@@ -29,6 +29,13 @@ body .nav-container nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0px 50px;
+}
+
+@media (max-width: 991px) {
+  body .nav-container nav .container {
+    padding: 0px 10px;
+  }
 }
 
 body .nav-container nav .container .logoimg {
