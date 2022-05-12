@@ -1,50 +1,61 @@
 body {
-position: relative;
+    position: relative;
+
     h1,
     h2,
     h3 {
         color: #006CAE;
 
     }
-    .container{
-        
+
+    .container {
+
         @media (min-width: 576px) {
             max-width: 100%;
         }
     }
-    
-    .nav-container{
+
+    .nav-container {
         width: 100%;
         position: fixed;
         background-color: #fff;
-        z-index: 1;
+        z-index: 3;
         top: 0;
+        transition: 0.5s ease-in-out;
+
         nav {
             .container {
                 justify-content: space-between;
-                .logoimg{
+
+                .logoimg {
                     transition: 0.5s ease-in-out;
-                        &:hover{
-                            transform: translateY(-5px);
-                        }
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
                 }
+
                 .navbar-collapse {
                     flex-grow: 0;
-                    .nav-item{
+
+                    .nav-item {
                         transition: 0.5s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             transform: translateY(-5px);
                         }
+
                         a {
                             font-size: 18px;
                             text-decoration: none;
                             transition: 0.5s ease-in-out;
-                            &:hover{
+
+                            &:hover {
                                 color: #999999 !important;
                             }
                         }
                     }
-    
+
                 }
             }
         }
@@ -59,38 +70,48 @@ position: relative;
             }
         }
     }
+
     // @media (min-width: 1200px)
     // .container, .container-lg, .container-md, .container-sm, .container-xl {
-    //     max-width: 1401px;
+    //     max-width: 1400px;
     // }
 
-    .top-btn{
+    .top-btn {
+        width: 70px;
+        height: 70px;
+        // display: none;
+        padding: 10px;
+
         position: fixed;
         z-index: 2;
         bottom: 20px;
         right: 20px;
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        background-color: #2895da;
-        cursor: pointer;
-        transition: .5s ease-in-out;
+
+        background-color: #A0E1F2;
         font-size: 26px;
-        padding: 10px;
-        color:#fff;
+        color: #192B54;
         text-decoration: none;
-        &:hover{
+
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
             transform: translateY(-10px);
         }
     }
+
     section#banner {
         margin-top: 20px;
+
         @media (max-width: 991px) {
             margin-top: 30px;
         }
+
         @media (max-width: 767px) {
             margin-top: 40px;
         }
+
         .carousel-inner {
             .carousel-item {
                 img {
@@ -103,20 +124,25 @@ position: relative;
     section#service {
         opacity: 0;
         transition: 0.5s ease-in-out;
-        .container{
+
+        .container {
             @media (min-width: 576px) {
                 max-width: 90%;
             }
+
             h3 {
                 font-weight: 600;
             }
-            .hoverzoom{
+
+            .hoverzoom {
                 // height: 440px;
                 padding: 20px;
-                @media screen and (max-width: 991px){
+
+                @media screen and (max-width: 991px) {
                     margin-bottom: 20px;
                 }
             }
+
             // #card-1{
             //     animation-delay: 0.5s;
             //     // animation: dropDown 0.75s ease-in-out;
@@ -130,7 +156,7 @@ position: relative;
             // }
         }
 
-        
+
     }
 
     // section#expected-benefit {
@@ -183,18 +209,24 @@ position: relative;
     // }
 
     section#about {
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+
         img {
             height: auto;
             padding: 0px;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
     }
 
     section#contact {
+        opacity: 0;
         margin-top: 200px;
         background-color: #006CAE;
+        transition: 0.5s ease-in-out;
 
         .container {
             max-width: 1100px;
@@ -229,6 +261,30 @@ position: relative;
 
                 span {
                     font-size: 18px;
+                }
+
+                .company-phone {
+                    &:hover {
+                        .fa-phone {
+                            animation: phone 1s linear;
+                        }
+                    }
+                }
+
+                .company-email {
+                    &:hover {
+                        .fa-envelope {
+                            animation: email 0.5s linear;
+                        }
+                    }
+                }
+
+                .company-address {
+                    &:hover {
+                        .fa-map-marker-alt {
+                            animation: location 0.5s linear;
+                        }
+                    }
                 }
             }
 
@@ -460,7 +516,8 @@ position: relative;
                 //     color: white;
                 // }
             }
-            a{
+
+            a {
                 color: #999999;
                 text-decoration: none;
             }
@@ -491,26 +548,156 @@ position: relative;
             }
         }
     }
+
     @keyframes dropDown {
-        0%{
+        0% {
             transform: translateY(-50px);
             // opacity: 0;
         }
-        100%{
+
+        100% {
             transform: translateY(0px);
             // opacity: 1;
         }
     }
+
+    @keyframes showBtn {
+        0% {
+            transform: translateY(90px);
+            // opacity: 0;
+        }
+
+        90% {
+            transform: translateY(-10px);
+            // opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes phone {
+        0% {
+            transform: rotateZ(30deg);
+        }
+
+        10% {
+            transform: rotateZ(-30deg);
+        }
+
+        20% {
+            transform: rotateZ(30deg);
+        }
+
+        30% {
+            transform: rotateZ(-30deg);
+        }
+
+        40% {
+            transform: rotateZ(30deg);
+        }
+
+        50% {
+            transform: rotateZ(-30deg);
+        }
+
+        60% {
+            transform: rotateZ(30deg);
+        }
+
+        70% {
+            transform: rotateZ(-30deg);
+        }
+
+        80% {
+            transform: rotateZ(30deg);
+        }
+
+        90% {
+            transform: rotateZ(-30deg);
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+        }
+    }
+
+    @keyframes email {
+        0% {
+            transform: translateX(-2.5px);
+        }
+
+        20% {
+            transform: translateX(2.5px);
+        }
+
+        40% {
+            transform: translateX(-2.5px);
+        }
+
+        60% {
+            transform: translateX(2.5px);
+        }
+
+        80% {
+            transform: translateX(-2.5px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes location {
+        0% {
+            transform: translateY(5px);
+        }
+
+        40% {
+            transform: translateY(-10px);
+        }
+
+        60% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 }
-.show{
+
+.show {
     opacity: 1 !important;
 }
-.drop-animation-1{
+
+.drop-animation-1 {
     animation: dropDown 0.5s ease-in-out;
 }
-.drop-animation-2{
+
+.drop-animation-2 {
     animation: dropDown 0.75s ease-in-out;
 }
-.drop-animation-3{
+
+.drop-animation-3 {
     animation: dropDown 1s ease-in-out;
+}
+
+.show-btn {
+    animation: showBtn 1s ease-in;
+}
+
+.not-show-btn {
+    transform: translateY(100px);
+}
+
+.change-nav {
+    background-color: #0066A1 !important;
+    .text-navbar li a{
+        color: #fff !important;
+    }
+    .logoimg{
+        mix-blend-mode: plus-lighter;
+    }
 }

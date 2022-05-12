@@ -18,8 +18,10 @@ body .nav-container {
   width: 100%;
   position: fixed;
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
   top: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 body .nav-container nav .container {
@@ -72,21 +74,21 @@ body .nav-container nav .container .navbar-collapse .nav-item a:hover {
 }
 
 body .top-btn {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
   position: fixed;
   z-index: 2;
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  background-color: #2895da;
-  cursor: pointer;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  background-color: #A0E1F2;
   font-size: 26px;
-  padding: 10px;
-  color: #fff;
+  color: #192B54;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 body .top-btn:hover {
@@ -140,6 +142,12 @@ body section#service .container .hoverzoom {
   }
 }
 
+body section#about {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 body section#about img {
   height: auto;
   padding: 0px;
@@ -150,8 +158,11 @@ body section#about p {
 }
 
 body section#contact {
+  opacity: 0;
   margin-top: 200px;
   background-color: #006CAE;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 body section#contact .container {
@@ -187,6 +198,21 @@ body section#contact .container .companyinfo i {
 
 body section#contact .container .companyinfo span {
   font-size: 18px;
+}
+
+body section#contact .container .companyinfo .company-phone:hover .fa-phone {
+  -webkit-animation: phone 1s linear;
+          animation: phone 1s linear;
+}
+
+body section#contact .container .companyinfo .company-email:hover .fa-envelope {
+  -webkit-animation: email 0.5s linear;
+          animation: email 0.5s linear;
+}
+
+body section#contact .container .companyinfo .company-address:hover .fa-map-marker-alt {
+  -webkit-animation: location 0.5s linear;
+          animation: location 0.5s linear;
 }
 
 body section#contact .container .followus {
@@ -449,6 +475,222 @@ body footer .footerInfo a {
   }
 }
 
+@-webkit-keyframes showBtn {
+  0% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes showBtn {
+  0% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes phone {
+  0% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  10% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  70% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes phone {
+  0% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  10% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  70% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(30deg);
+            transform: rotateZ(30deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes email {
+  0% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  20% {
+    -webkit-transform: translateX(2.5px);
+            transform: translateX(2.5px);
+  }
+  40% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  60% {
+    -webkit-transform: translateX(2.5px);
+            transform: translateX(2.5px);
+  }
+  80% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes email {
+  0% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  20% {
+    -webkit-transform: translateX(2.5px);
+            transform: translateX(2.5px);
+  }
+  40% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  60% {
+    -webkit-transform: translateX(2.5px);
+            transform: translateX(2.5px);
+  }
+  80% {
+    -webkit-transform: translateX(-2.5px);
+            transform: translateX(-2.5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes location {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes location {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 .show {
   opacity: 1 !important;
 }
@@ -466,5 +708,27 @@ body footer .footerInfo a {
 .drop-animation-3 {
   -webkit-animation: dropDown 1s ease-in-out;
           animation: dropDown 1s ease-in-out;
+}
+
+.show-btn {
+  -webkit-animation: showBtn 1s ease-in;
+          animation: showBtn 1s ease-in;
+}
+
+.not-show-btn {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.change-nav {
+  background-color: #0066A1 !important;
+}
+
+.change-nav .text-navbar li a {
+  color: #fff !important;
+}
+
+.change-nav .logoimg {
+  mix-blend-mode: plus-lighter;
 }
 /*# sourceMappingURL=index.css.map */
