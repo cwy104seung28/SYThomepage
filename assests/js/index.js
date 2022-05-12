@@ -86,10 +86,10 @@ function setScroll() {
         $(`#card-${i}`).addClass(`drop-animation-${i}`);
       }
     }
-    if ($("#contact").hasClass("show")) {
-      $(".top-btn").removeClass("not-show-btn");
-      $(".top-btn").addClass("show-btn");
-    }
+    // if ($("#contact").hasClass("show")) {
+      // $(".top-btn").removeClass("not-show-btn");
+      // $(".top-btn").addClass("show-btn");
+    // }
   } else {
     $("#service").removeClass("show");
     if (!$("#service").hasClass("show")) {
@@ -97,10 +97,10 @@ function setScroll() {
         $(`#card-${i}`).removeClass(`drop-animation-${i}`);
       }
     }
-    if (!$("#contact").hasClass("show")) {
-      $(".top-btn").removeClass("show-btn");
-      $(".top-btn").addClass("not-show-btn");
-    }
+    // if (!$("#contact").hasClass("show")) {
+      // $(".top-btn").removeClass("show-btn");
+      // $(".top-btn").addClass("not-show-btn");
+    // }
   }
   
 //   var aboutTranslateX = $("#about").offset().top - scroll;
@@ -123,10 +123,23 @@ function setScroll() {
   
   var contactTranslateX = scroll - ($("#contact").offset().top - 100);
   // $("#contact").offset().top - scroll 是scroll到contact的距離
-  if(contactTranslateX<=0){
-    $("#contact .container").css("transform",`translateX(${contactTranslateX}px)`);
+  if(contactTranslateX<-800){
+    // $("#contact .container").css("transform",`translateX(${contactTranslateX}px)`);
+    $(".top-btn").removeClass("show-btn");
+    $(".top-btn").addClass("not-show-btn");
   }
-  else{
-    $("#contact .container").css("transform",`translateX(0px)`);
+    else{
+    // $("#contact .container").css("transform",`translateX(${contactTranslateX}px)`);
+    $(".top-btn").removeClass("not-show-btn");
+    $(".top-btn").addClass("show-btn");
   }
+  // else if(-800<=contactTranslateX && contactTranslateX<= 0){
+  //   // $("#contact .container").css("transform",`translateX(${contactTranslateX}px)`);
+  //   $(".top-btn").removeClass("not-show-btn");
+  //   $(".top-btn").addClass("show-btn");
+  // }
+  // else{
+  //   $("#contact .container").css("transform","translateX(0px)");
+
+  // }
 }

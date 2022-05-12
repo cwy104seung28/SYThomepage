@@ -181,7 +181,7 @@ p {
 }
 
 .contact-part {
-	background-image: url('../images/contact.png');
+	/* background-image: url('../images/contact.png'); */
 	background-color: #49154a;
 	color: #fff;
 }
