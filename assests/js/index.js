@@ -112,18 +112,24 @@ function setScroll() {
 //     $("#about").css("transform",`translateX(0px)`);
 //   }
 
-  var aboutTranslateX = ($("#about").offset().top - 64) - scroll;
+  var aboutCont = ($("#about").offset().top - 64) - scroll;
   // $("#about").offset().top - scroll 是scroll到about的距離
-  if(aboutTranslateX>=0){
-    $("#about .container").css("transform",`translateX(${aboutTranslateX}px)`);
+  // if(aboutTranslateX>=0){
+  //   // $("#about .container").css("transform",`translateX(${aboutTranslateX}px)`);
+  // }
+  if(aboutCont<500){
+    $("#about-content").addClass("about-original");
+    $("#about-img").addClass("about-original");
   }
   else{
-    $("#about .container").css("transform",`translateX(0px)`);
+    $("#about-content").removeClass("about-original");
+    $("#about-img").removeClass("about-original");
+
   }
   
-  var contactTranslateX = scroll - ($("#contact").offset().top - 100);
+  var contactCont = scroll - ($("#contact").offset().top - 100);
   // $("#contact").offset().top - scroll 是scroll到contact的距離
-  if(contactTranslateX<-800){
+  if(contactCont<-800){
     // $("#contact .container").css("transform",`translateX(${contactTranslateX}px)`);
     $(".top-btn").removeClass("show-btn");
     $(".top-btn").addClass("not-show-btn");

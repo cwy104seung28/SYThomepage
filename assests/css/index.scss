@@ -259,7 +259,15 @@ body {
         @media (max-width: 991px) {
             padding: 40px 0px;
         }
-
+        #about-content{
+            transform: translateX(-1000px);
+            transition: 1s ease-in-out;
+        }
+        #about-img{
+            padding: 0px;
+            transform: translateX(1000px);
+            transition: 1s ease-in-out;
+        }
         img {
             height: auto;
             padding: 0px;
@@ -748,6 +756,10 @@ body {
 
 .not-show-btn {
     transform: translateY(100px);
+}
+
+.about-original{
+    transform: translateX(0px) !important;
 }
 
 .change-nav {
