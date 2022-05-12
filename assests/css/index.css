@@ -99,6 +99,7 @@ body .top-btn {
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  line-height: 22px;
 }
 
 body .top-btn:hover {
