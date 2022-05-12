@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 body h1,
@@ -723,18 +724,18 @@ body footer .footerInfo a {
 }
 
 .drop-animation-1 {
-  -webkit-animation: dropDown 1s ease-in-out;
-          animation: dropDown 1s ease-in-out;
+  -webkit-animation: dropDown 0.5s ease-in-out;
+          animation: dropDown 0.5s ease-in-out;
 }
 
 .drop-animation-2 {
-  -webkit-animation: dropDown 1.5s ease-in-out;
-          animation: dropDown 1.5s ease-in-out;
+  -webkit-animation: dropDown 0.75s ease-in-out;
+          animation: dropDown 0.75s ease-in-out;
 }
 
 .drop-animation-3 {
-  -webkit-animation: dropDown 2s ease-in-out;
-          animation: dropDown 2s ease-in-out;
+  -webkit-animation: dropDown 1s ease-in-out;
+          animation: dropDown 1s ease-in-out;
 }
 
 .show-btn {

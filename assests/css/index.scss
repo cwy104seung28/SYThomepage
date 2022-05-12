@@ -1,6 +1,6 @@
 body {
     position: relative;
-
+    overflow-x: hidden;
     h1,
     h2,
     h3 {
@@ -697,15 +697,15 @@ body {
 }
 
 .drop-animation-1 {
-    animation: dropDown 1s ease-in-out;
+    animation: dropDown 0.5s ease-in-out;
 }
 
 .drop-animation-2 {
-    animation: dropDown 1.5s ease-in-out;
+    animation: dropDown 0.75s ease-in-out;
 }
 
 .drop-animation-3 {
-    animation: dropDown 2s ease-in-out;
+    animation: dropDown 1s ease-in-out;
 }
 
 .show-btn {
