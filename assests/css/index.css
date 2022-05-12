@@ -114,6 +114,12 @@ body section#banner .carousel-inner .carousel-item img {
   width: 100%;
 }
 
+body section#service {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 @media (min-width: 576px) {
   body section#service .container {
     max-width: 90%;
@@ -132,25 +138,6 @@ body section#service .container .hoverzoom {
   body section#service .container .hoverzoom {
     margin-bottom: 20px;
   }
-}
-
-body section#service .container #card-1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation: dropDown 0.75s ease-in-out;
-          animation: dropDown 0.75s ease-in-out;
-}
-
-body section#service .container #card-2 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-  -webkit-animation: dropDown 0.5s ease-in-out;
-          animation: dropDown 0.5s ease-in-out;
-}
-
-body section#service .container #card-3 {
-  -webkit-animation: dropDown 0.25s ease-in-out;
-          animation: dropDown 0.25s ease-in-out;
 }
 
 body section#about img {
@@ -442,27 +429,42 @@ body footer .footerInfo a {
 
 @-webkit-keyframes dropDown {
   0% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    opacity: 1;
   }
 }
 
 @keyframes dropDown {
   0% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    opacity: 1;
   }
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.drop-animation-1 {
+  -webkit-animation: dropDown 0.5s ease-in-out;
+          animation: dropDown 0.5s ease-in-out;
+}
+
+.drop-animation-2 {
+  -webkit-animation: dropDown 0.75s ease-in-out;
+          animation: dropDown 0.75s ease-in-out;
+}
+
+.drop-animation-3 {
+  -webkit-animation: dropDown 1s ease-in-out;
+          animation: dropDown 1s ease-in-out;
 }
 /*# sourceMappingURL=index.css.map */

@@ -101,6 +101,8 @@ position: relative;
     }
 
     section#service {
+        opacity: 0;
+        transition: 0.5s ease-in-out;
         .container{
             @media (min-width: 576px) {
                 max-width: 90%;
@@ -115,17 +117,17 @@ position: relative;
                     margin-bottom: 20px;
                 }
             }
-            #card-1{
-                animation-delay: 0.5s;
-                animation: dropDown 0.75s ease-in-out;
-            }
-            #card-2{
-                animation-delay: 0.25s;
-                animation: dropDown 0.5s ease-in-out;
-            }
-            #card-3{
-                animation: dropDown 0.25s ease-in-out;
-            }
+            // #card-1{
+            //     animation-delay: 0.5s;
+            //     // animation: dropDown 0.75s ease-in-out;
+            // }
+            // #card-2{
+            //     animation-delay: 0.25s;
+            //     // animation: dropDown 0.5s ease-in-out;
+            // }
+            // #card-3{
+            //     animation: dropDown 0.25s ease-in-out;
+            // }
         }
 
         
@@ -491,12 +493,24 @@ position: relative;
     }
     @keyframes dropDown {
         0%{
-            transform: translateY(-30px);
-            opacity: 0;
+            transform: translateY(-50px);
+            // opacity: 0;
         }
         100%{
             transform: translateY(0px);
-            opacity: 1;
+            // opacity: 1;
         }
     }
+}
+.show{
+    opacity: 1 !important;
+}
+.drop-animation-1{
+    animation: dropDown 0.5s ease-in-out;
+}
+.drop-animation-2{
+    animation: dropDown 0.75s ease-in-out;
+}
+.drop-animation-3{
+    animation: dropDown 1s ease-in-out;
 }
