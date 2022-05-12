@@ -133,19 +133,38 @@ body section#service .container h3 {
 }
 
 body section#service .container .hoverzoom {
+  height: 450px;
   padding: 20px;
+}
+
+@media screen and (max-width: 1436px) {
+  body section#service .container .hoverzoom {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1161px) {
+  body section#service .container .hoverzoom {
+    height: 550px;
+  }
 }
 
 @media screen and (max-width: 991px) {
   body section#service .container .hoverzoom {
+    height: auto;
     margin-bottom: 20px;
   }
 }
 
 body section#about {
-  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  body section#about {
+    padding: 40px 0px;
+  }
 }
 
 body section#about img {
@@ -158,8 +177,6 @@ body section#about p {
 }
 
 body section#contact {
-  opacity: 0;
-  margin-top: 200px;
   background-color: #006CAE;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -189,6 +206,16 @@ body section#contact .container p {
 
 body section#contact .container hr {
   color: #fff;
+}
+
+body section#contact .container a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  letter-spacing: 0px;
+  text-decoration: none;
 }
 
 body section#contact .container .companyinfo i {
@@ -696,18 +723,18 @@ body footer .footerInfo a {
 }
 
 .drop-animation-1 {
-  -webkit-animation: dropDown 0.5s ease-in-out;
-          animation: dropDown 0.5s ease-in-out;
+  -webkit-animation: dropDown 1s ease-in-out;
+          animation: dropDown 1s ease-in-out;
 }
 
 .drop-animation-2 {
-  -webkit-animation: dropDown 0.75s ease-in-out;
-          animation: dropDown 0.75s ease-in-out;
+  -webkit-animation: dropDown 1.5s ease-in-out;
+          animation: dropDown 1.5s ease-in-out;
 }
 
 .drop-animation-3 {
-  -webkit-animation: dropDown 1s ease-in-out;
-          animation: dropDown 1s ease-in-out;
+  -webkit-animation: dropDown 2s ease-in-out;
+          animation: dropDown 2s ease-in-out;
 }
 
 .show-btn {

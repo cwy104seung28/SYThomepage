@@ -135,12 +135,22 @@ body {
             }
 
             .hoverzoom {
-                // height: 440px;
+                height: 450px;
                 padding: 20px;
 
+                @media screen and (max-width: 1436px) {
+                    height: 500px;
+                }
+
+                @media screen and (max-width: 1161px) {
+                    height: 550px;
+                }
+
                 @media screen and (max-width: 991px) {
+                    height: auto;
                     margin-bottom: 20px;
                 }
+
             }
 
             // #card-1{
@@ -209,9 +219,13 @@ body {
     // }
 
     section#about {
-        opacity: 0;
+        // opacity: 0;
         transition: 0.5s ease-in-out;
 
+        @media (max-width: 991px) {
+            padding: 40px 0px;
+        }
+            
         img {
             height: auto;
             padding: 0px;
@@ -223,8 +237,8 @@ body {
     }
 
     section#contact {
-        opacity: 0;
-        margin-top: 200px;
+        // opacity: 0;
+        // margin-top: 200px;
         background-color: #006CAE;
         transition: 0.5s ease-in-out;
 
@@ -251,6 +265,16 @@ body {
 
             hr {
                 color: #fff;
+            }
+
+            a {
+                display: block;
+                font-size: 20px;
+                color: #fff;
+                width: 100%;
+                margin: auto;
+                letter-spacing: 0px;
+                text-decoration: none;
             }
 
             .companyinfo {
@@ -673,15 +697,15 @@ body {
 }
 
 .drop-animation-1 {
-    animation: dropDown 0.5s ease-in-out;
+    animation: dropDown 1s ease-in-out;
 }
 
 .drop-animation-2 {
-    animation: dropDown 0.75s ease-in-out;
+    animation: dropDown 1.5s ease-in-out;
 }
 
 .drop-animation-3 {
-    animation: dropDown 1s ease-in-out;
+    animation: dropDown 2s ease-in-out;
 }
 
 .show-btn {
@@ -694,10 +718,12 @@ body {
 
 .change-nav {
     background-color: #0066A1 !important;
-    .text-navbar li a{
+
+    .text-navbar li a {
         color: #fff !important;
     }
-    .logoimg{
+
+    .logoimg {
         mix-blend-mode: plus-lighter;
     }
 }
