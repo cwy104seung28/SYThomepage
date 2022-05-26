@@ -42,6 +42,13 @@ body .system-container .swiper .swiper-slide img {
      object-fit: cover;
 }
 
+body .system-container .swiper .swiper-pagination span {
+  height: 40px;
+  border-radius: 0px;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   left: 10px;

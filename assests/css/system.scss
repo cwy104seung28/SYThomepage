@@ -12,6 +12,9 @@ body {
     margin: 0;
     padding: 0;
     .system-container {
+        // #carouselExampleIndicators{
+        //     height: 80vh;
+        // }
         .swiper {
             width: 100%;
             height: 100vh;
@@ -38,6 +41,14 @@ body {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+            .swiper-pagination {
+                span {
+                    height: 40px;
+                    border-radius: 0px;
+                    font-size: 21px;
+                    margin-bottom: 10px;
                 }
             }
         }
