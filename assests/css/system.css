@@ -13,12 +13,12 @@ body {
   padding: 0;
 }
 
-body .swiper {
+body .system-container .swiper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
-body .swiper .swiper-slide {
+body .system-container .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -34,11 +34,17 @@ body .swiper .swiper-slide {
   align-items: center;
 }
 
-body .swiper .swiper-slide img {
+body .system-container .swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 10px;
+  right: auto;
 }
 /*# sourceMappingURL=system.css.map */

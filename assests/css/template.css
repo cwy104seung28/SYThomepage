@@ -81,4 +81,78 @@ body .nav-container nav .container .navbar-collapse .nav-item a:hover {
     text-align: center;
   }
 }
+
+body footer {
+  color: #999999;
+  padding: 40px;
+  font-size: 12px;
+  margin: 0;
+}
+
+body footer .footerCompany {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+body footer .footerCompany h5 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+body footer .footerCompany p {
+  font-size: 12px;
+  margin: 2px;
+}
+
+body footer .footerInfo {
+  border-left: solid 1px #999999;
+  padding-left: 20px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+body footer .footerInfo p {
+  font-size: 12px;
+  margin: 8px;
+}
+
+body footer .footerInfo a {
+  color: #999999;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  body footer {
+    padding: 40px 20px;
+  }
+  body footer .footerCompany,
+  body footer .footerInfo {
+    text-align: center;
+    padding: 0;
+  }
+  body footer .footerCompany {
+    margin-bottom: 10px;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #999999;
+  }
+  body footer .footerInfo {
+    border: none;
+    padding-left: 0px;
+  }
+}
+
+.change-nav {
+  background-color: #0066A1 !important;
+}
+
+.change-nav .text-navbar li a {
+  color: #fff !important;
+}
+
+.change-nav .logoimg {
+  mix-blend-mode: plus-lighter;
+}
 /*# sourceMappingURL=template.css.map */

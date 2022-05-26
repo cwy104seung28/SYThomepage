@@ -1,14 +1,5 @@
 // 滑動到最上方的效果---------------
 $(window).scroll(function () {
-  // if ($(window).width() > 768) {
-  //   // if ($(window).scrollTop() <= 0) {
-  //   //   $(".nav,.en,.ch,.explore,.line").addClass("top");
-  //   // }
-  //   // else {
-  //   //   $(".nav,.en,.ch,.explore,.line").removeClass("top");
-  //   // }
-  // }
-
   setScroll();
 });
 
