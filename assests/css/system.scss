@@ -47,7 +47,7 @@ body {
             }
             .swiper-pagination {
                 position: static;
-                span {
+                .swiper-pagination-bullet{
                     width: 260px;
                     height: 40px;
                     padding: 20px;
@@ -56,13 +56,44 @@ body {
                     margin-bottom: 10px;
                     background-color: transparent;
                     text-align: left;
+                    ::before{
+                        display: inline-block;
+                        content: '';
+                        width: 5px;
+                        height: 30px;
+                        background-color: #999999;
+                        transform: translate(-5px, 6px);
+                    }
                 }
+                // span {
+                //     ::before{
+                //         display: inline-block;
+                //         content: '';
+                //         width: 7.5px;
+                //         height: 30px;
+                //         background-color: #007aff;
+                //         transform: translate(-5px, 6px);
+                //     }
+                // }
                 .swiper-pagination-bullet-active{
                     transition: 0.5s ease-in-out !important;
                     font-size: 24px !important;
+                    color: #007aff;
+                    font-weight: 600;
+                    ::before{
+                        display: inline-block;
+                        content: '';
+                        width: 5px;
+                        height: 30px;
+                        background-color: #007aff;
+                        transform: translate(-5px, 6px);
+                    }
                 }
             }
         }
+    }
+    footer {
+        background-color: #fff;
     }
 }
 .swiper-pagination-vertical.swiper-pagination-bullets,

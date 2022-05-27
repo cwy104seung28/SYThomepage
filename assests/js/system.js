@@ -22,13 +22,16 @@ var paginationSpan = document.getElementsByClassName("swiper-pagination-bullet")
 var i;
 for (i = 0; i < asideArr.length; i++) {
 
-    var span1 = document.createElement('span');
-    span1.style['background-color']='#007aff';
+    // var spanBefore = document.createElement('span::before');
+    // spanBefore.style['content']='';
+    // spanBefore.style['width']='10px';
+    // spanBefore.style['height']='40px';
+    // spanBefore.style['background-color']='#007aff';
 
-    var span2 = document.createElement('span');
-    span2.textContent = asideArr[i];
+    var span = document.createElement('span');
+    span.textContent = asideArr[i];
 
-    paginationSpan[i].appendChild(span2);
+    paginationSpan[i].appendChild(span);
 }
 // paginationSpan.forEach(element => {
 //   var i=0;
