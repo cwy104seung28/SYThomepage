@@ -17,13 +17,18 @@ const asideArr=[
   '簽核管理'
 ]
 
-var paginationSpan = [document.getElementsByClassName("swiper-pagination-bullet")];
+var paginationSpan = document.getElementsByClassName("swiper-pagination-bullet");
 
 var i;
-for (i = 0; i < paginationSpan.length; i++) {
-    var span = document.createElement('span');
-    span.textContent = asideArr[i];
-    document.querySelector('.swiper-pagination-bullet').appendChild(span);
+for (i = 0; i < asideArr.length; i++) {
+
+    var span1 = document.createElement('span');
+    span1.style['background-color']='#007aff';
+
+    var span2 = document.createElement('span');
+    span2.textContent = asideArr[i];
+
+    paginationSpan[i].appendChild(span2);
 }
 // paginationSpan.forEach(element => {
 //   var i=0;

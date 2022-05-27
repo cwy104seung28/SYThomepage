@@ -17,7 +17,9 @@ body {
         // }
         .swiper {
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 80px);
+            display: flex;
+            margin-top: 80px;
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
@@ -44,11 +46,20 @@ body {
                 }
             }
             .swiper-pagination {
+                position: static;
                 span {
+                    width: 260px;
                     height: 40px;
+                    padding: 20px;
                     border-radius: 0px;
                     font-size: 21px;
                     margin-bottom: 10px;
+                    background-color: transparent;
+                    text-align: left;
+                }
+                .swiper-pagination-bullet-active{
+                    transition: 0.5s ease-in-out !important;
+                    font-size: 24px !important;
                 }
             }
         }
@@ -58,4 +69,5 @@ body {
 .swiper-vertical > .swiper-pagination-bullets {
     left: 10px;
     right: auto;
+    transform: translate3d(0px,0px,0);
 }
