@@ -59,6 +59,8 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet {
   margin-bottom: 10px;
   background-color: transparent;
   text-align: left;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 body .system-container .swiper .swiper-pagination .swiper-pagination-bullet ::before {
@@ -72,11 +74,11 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet ::be
 }
 
 body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-active {
-  -webkit-transition: 0.5s ease-in-out !important;
-  transition: 0.5s ease-in-out !important;
-  font-size: 24px !important;
+  font-size: 24px;
   color: #007aff;
   font-weight: 600;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-active ::before {
