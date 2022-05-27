@@ -1,9 +1,17 @@
 var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      direction: "horizontal",
+    },
+    768:{
+      direction: "vertical",
+    }
+},
 });
 
 const asideArr=[
