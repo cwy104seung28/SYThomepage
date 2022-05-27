@@ -24,12 +24,13 @@ body {
                 height: calc(80vh - 80px);
             }
             @media (max-width: 991px) {
-                height: calc(75vh - 80px);
-            }
-            @media (max-width: 767px) {
                 height: auto;
                 flex-direction: column;
             }
+            // @media (max-width: 767px) {
+            //     // height: auto;
+                
+            // }
             .swiper-slide {
                 height: auto;
                 text-align: center;
@@ -63,7 +64,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                @media (max-width: 767px) {
+                @media (max-width: 991px) {
                     flex-direction: row;
                 }
                 .swiper-pagination-bullet {
@@ -85,9 +86,9 @@ body {
                         font-size: 18px;
                     }
                     @media (max-width: 991px) {
-                        margin-bottom: 10px;
+                        // margin-bottom: 10px;
                         width: 160px;
-                        font-size: 16px;
+                        font-size: 14px;
                     }
 
                     @media (max-width: 767px) {
@@ -102,22 +103,12 @@ body {
                         background-color: #ffffff;
                         transform: translate(-5px, 6px);
 
-                        @media (max-width: 767px) {
+                        @media (max-width: 991px) {
                             width: 3px;
                             height: 20px;
                         }
                     }
                 }
-                // span {
-                //     ::before{
-                //         display: inline-block;
-                //         content: '';
-                //         width: 7.5px;
-                //         height: 30px;
-                //         background-color: #007aff;
-                //         transform: translate(-5px, 6px);
-                //     }
-                // }
                 .swiper-pagination-bullet-active {
                     font-size: 24px;
                     color: #ffffff;
@@ -128,7 +119,7 @@ body {
                         font-size: 20px;
                     }
                     @media (max-width: 991px) {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @media (max-width: 767px) {
                         font-size: 13px;
@@ -140,7 +131,7 @@ body {
                         height: 30px;
                         background-color: #ffffff;
                         transform: translate(-5px, 6px);
-                        @media (max-width: 767px) {
+                        @media (max-width: 991px) {
                             width: 3px;
                             height: 20px;
                         }

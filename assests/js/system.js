@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     320: {
       direction: "horizontal",
     },
-    768:{
+    992:{
       direction: "vertical",
     }
 },

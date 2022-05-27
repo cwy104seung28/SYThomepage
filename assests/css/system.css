@@ -30,12 +30,6 @@ body .system-container .swiper {
 
 @media (max-width: 991px) {
   body .system-container .swiper {
-    height: calc(75vh - 80px);
-  }
-}
-
-@media (max-width: 767px) {
-  body .system-container .swiper {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -85,7 +79,7 @@ body .system-container .swiper .swiper-pagination {
           justify-content: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body .system-container .swiper .swiper-pagination {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -119,9 +113,8 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet {
 
 @media (max-width: 991px) {
   body .system-container .swiper .swiper-pagination .swiper-pagination-bullet {
-    margin-bottom: 10px;
     width: 160px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -142,7 +135,7 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet ::be
           transform: translate(-5px, 6px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body .system-container .swiper .swiper-pagination .swiper-pagination-bullet ::before {
     width: 3px;
     height: 20px;
@@ -166,7 +159,7 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-acti
 
 @media (max-width: 991px) {
   body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-active {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -186,7 +179,7 @@ body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-acti
           transform: translate(-5px, 6px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body .system-container .swiper .swiper-pagination .swiper-pagination-bullet-active ::before {
     width: 3px;
     height: 20px;
