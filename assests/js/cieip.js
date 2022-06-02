@@ -1,42 +1,54 @@
-const mainvue = {
-  data() {
-      return {
-          list01: [true, false, false, false, false, false, false, false],
-          list02: [true, false, false, false, false, false],
-          list03: [true, false, false, false, false, false],
-          list04: [true, false, false, false, false, false, false],
-          list05: [true, false, false],
-          list06: [true, false, false, false]
-      };
-  },
+$(window).scroll(function () {
+  setScroll();
+});
 
-  methods: {
-      cg01(idx) {
-          this.list01 = [false, false, false, false, false, false, false, false];
-          this.list01[idx] = true;
-      },
-      cg02(idx) {
-          this.list02 = [false, false, false, false, false, false];
-          this.list02[idx] = true;
-      },
-      cg03(idx) {
-          this.list03 = [false, false, false, false, false];
-          this.list03[idx] = true;
-      },
-      cg04(idx) {
-          this.list04 = [false, false, false, false, false, false, false];
-          this.list04[idx] = true;
-      },
-      cg05(idx) {
-          this.list05 = [false, false, false];
-          this.list05[idx] = true;
-      },
-      cg06(idx) {
-          this.list06 = [false, false, false, false];
-          this.list06[idx] = true;
-      },
+function setScroll() {
+  var win = $(window),
+    hWin = win.height(),
+    wWin = win.width(),
+    scroll = $(window).scrollTop();
+  // var move = $("#service,#about,#contact");
+
+
+  var bannerCont = $("#vueapp").offset().top;
+  if (scroll > bannerCont) {
+    $(".nav-container").addClass("change-nav");
+  } else {
+    $(".nav-container").removeClass("change-nav");
   }
 
-};
+//   var serviceCont = $("#service").offset().top;
+//   if (scroll > serviceCont - hWin * 0.8) {
+//     $("#service").addClass("show");
+//     if ($("#service").hasClass("show")) {
+//       for (var i = 1; i < 4; i++) {
+//         $(`#card-${i}`).addClass(`drop-animation-${i}`);
+//       }
+//     }
+//     // if ($("#contact").hasClass("show")) {
+//       // $(".top-btn").removeClass("not-show-btn");
+//       // $(".top-btn").addClass("show-btn");
+//     // }
+//   } else {
+//     $("#service").removeClass("show");
+//     if (!$("#service").hasClass("show")) {
+//       for (var i = 1; i < 4; i++) {
+//         $(`#card-${i}`).removeClass(`drop-animation-${i}`);
+//       }
+//     }
 
-const main = Vue.createApp(mainvue).mount('#vueapp');
+//   }
+  
+  
+//   var contactCont = scroll - ($("#contact").offset().top - 100);
+//   if(contactCont<-800){
+//     $(".top-btn").removeClass("show-btn");
+//     $(".top-btn").addClass("not-show-btn");
+//   }
+//     else{
+//     $(".top-btn").removeClass("not-show-btn");
+//     $(".top-btn").addClass("show-btn");
+//   }
+
+// 
+}

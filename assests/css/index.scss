@@ -5,35 +5,6 @@ body {
     //     max-width: 1400px;
     // }
 
-    .top-btn {
-        width: 70px;
-        height: 70px;
-        // display: none;
-        padding: 7px;
-
-        position: fixed;
-        z-index: 2;
-        bottom: 20px;
-        right: 20px;
-        border-radius: 50%;
-
-        background-color: #A0E1F2;
-        font-size: 22px;
-        color: #192B54;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        transition: 0.5s ease-in-out;
-        line-height: 22px;
-        // &::before{
-        //     width: 10px;
-        //     height: 10px;
-        //     content: '^';
-        // }
-        &:hover {
-            transform: translateY(-10px);
-        }
-    }
 
     section#banner {
         margin-top: 30px;
@@ -503,21 +474,7 @@ body {
         }
     }
 
-    @keyframes showBtn {
-        0% {
-            transform: translateY(90px);
-            // opacity: 0;
-        }
 
-        90% {
-            transform: translateY(-10px);
-            // opacity: 1;
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
 
     @keyframes phone {
         0% {
@@ -624,14 +581,6 @@ body {
 
 .drop-animation-3 {
     animation: dropDown 1s ease-in-out;
-}
-
-.show-btn {
-    animation: showBtn 0.5s ease-in;
-}
-
-.not-show-btn {
-    transform: translateY(100px);
 }
 
 .about-original{
